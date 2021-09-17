@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hello {
+  margin-top: 1rem;
+}
+.checkout-main {
+  max-width: 1200px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 110px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: rgb(34, 146, 146);
+  padding: 0.3rem;
+  margin-bottom: 20px;
+
+  /* display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1200px;
+  width: 90%; */
+}
+
+/* .checkout-header {
+  width: 100%;
+  height: 50px;
+} */
+.event {
+  width: 70%;
+  float: right;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 5px;
+}
+.event h3 {
+  margin-left: 0.8rem;
+  color: yellow;
+}
+.event-pic {
+  /* background-image: url('./images/rsz_kids.jpg'); */
+  margin: 2px;
+  height: 350px;
+  border-radius: 5px;
+}
+.event-pic img {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 5px 5px 0 0;
+  object-fit: fill;
+}
+.event-container {
+  background: chartreuse;
+  height: auto;
+  border-radius: 5px;
+}
+
+.event-info {
+  background: rgb(12, 92, 92);
+  height: fit-content;
+  padding-top: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+
+  margin: 2px;
+  padding-bottom: 10px;
+}
+.event-info h4 {
+  color: rgb(233, 219, 29);
+  margin-top: 2px;
+  padding: 2px;
+}
+.event-info p {
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: Bradley Hand ITC, Arial, Helvetica, sans-serif;
+}
+.cart-items {
+  width: 30%;
+  float: left;
+  background: rgb(12, 92, 92);
+  height: 595px;
+  border-radius: 5px;
+  display: flex;
+  margin-top: 1.2rem;
+}
+.right-info {
+  flex: 0.9;
+  margin: 1.5rem auto;
+  height: auto;
+}
+.right-info > p {
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  font-weight: 150;
+
+  text-align: center;
+}
+.right-info p > button {
+  background: black;
+  color: aliceblue;
+  padding: 10px 16px;
+  border: 1px solid black;
+  outline: none;
+  cursor: pointer;
+  border-radius: 2px;
+  /* margin-left: 1rem; */
+}
+.right-info select {
+  padding: 8px 16px;
+}
+.event-info .h4 {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 758px) {
+  .checkout-main {
+    margin-top: 0;
+    margin-left: 0px;
+    width: 100%;
+    padding-right: 3px;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout-header {
+    margin-top: 1.5rem;
+  }
+  .event {
+    margin-right: 2px;
+    width: 100%;
+    margin-top: 2rem;
+    padding-top: 0.5rem;
+  }
+  .event-pic {
+    height: 200px;
+    margin-top: 1.5rem;
+  }
+  .event-pic img {
+    height: auto;
+  }
+  .event-info {
+    height: auto;
+  }
+  .cart-items {
+    height: fit-content;
+  }
+  .right-info {
+    padding-top: 30px;
+    padding-bottom: 125px;
+  }
+  .right-info > p {
+    padding: 0.6rem;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+  .right-info p > button {
+    padding: 5px 12px;
+    border: 1px solid black;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+    /* margin-left: 1rem; */
+  }
+  .right-info select {
+    padding: 2px 10px;
+  }
+  .event-info h4 {
+    margin-top: 1.5px;
+    padding: 1.5px;
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
+  .event-info p {
+    font-size: 0.8rem;
+    font-weight: 200;
+  }
+  .cart-items {
+    width: 100%;
+    height: 220px;
+    margin-top: 0;
+  }
+  .right-info {
+    padding-top: 0;
+    background: chocolate;
+    height: auto;
+  }
+}

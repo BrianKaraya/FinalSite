@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  /**display: flex;
+      justify-content: center;
+      align-items: center;
+      background: cyan;**/
+  box-sizing: border-box;
+  background-color: rgb(43, 39, 39);
+  --color-error: red;
+  --color-success: green;
+
+  background: #fff;
+}
+/**start nav-bar**/
+.header {
+  max-width: 1200px;
+  /* width: 100%; */
+  margin: 0 auto;
+  display: flex;
+
+  background: rgb(49, 233, 24);
+  /* overflow: hidden; */
+  align-items: center;
+  max-height: 70px;
+  height: 100%;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.header-inner {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(49, 233, 24);
+  height: 70px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+}
+.brand {
+  float: left;
+  font-size: 300%;
+  color: black;
+  text-decoration: none;
+  font-family: Colonna MT, cursive, Chiller, 'Permanent Marker';
+  font-weight: 900;
+  margin-left: 20px;
+  margin-top: 15px;
+  justify-self: start;
+  transform: rotate(-7deg);
+}
+.nav-menu {
+  /*nav*/
+  display: flex;
+  justify-content: space-around;
+
+  float: right;
+  min-height: 8vh;
+  /* margin-left: 550px; */
+  padding-top: 15px;
+  text-align: center;
+  margin: 5px;
+  width: 40%;
+  padding: 10px 15px;
+  margin-top: 15px;
+
+  /* display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw;
+  justify-content: end;
+  margin-right: 2rem; */
+}
+.menu-icon {
+  display: none;
+}
+.nav-item {
+  /*nav links li*/
+  font-size: 170%;
+  font-family: Garamond;
+  float: right;
+  padding-right: 0;
+  list-style: none;
+}
+
+.nav-links {
+  /*nav links li a*/
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links:hover {
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
+}
+.nav-links:active {
+  color: rgb(228, 13, 49);
+}
+
+.fa-bars {
+  color: rgb(2, 41, 4);
+}
+
+.fa-times {
+  color: rgb(2, 41, 4);
+}
+.nav-links-mobile {
+  display: none;
+}
+.cart {
+  display: flex;
+  width: 5rem;
+}
+.cart-items {
+  padding-right: 2px;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+.cart-svg {
+  width: 2rem;
+  height: 2rem;
+  background-color: rgb(21, 22, 22);
+  border-radius: 2px;
+
+  float: right;
+  margin-right: -470px;
+  margin-top: 28px;
+  position: relative;
+  background: black;
+}
+.fa-shopping-cart {
+  width: 2rem;
+  height: 2rem;
+  color: rgb(238, 215, 10);
+  padding: 8px 6px 6px 6px;
+
+  position: absolute;
+}
+
+.fa-shopping-cart:hover {
+  color: rgb(215, 230, 14);
+  /* transform: scale(1.2); */
+}
+/* .login {
+  
+  background-color: black;
+  color: white;
+  padding: 3px;
+  border-radius: 3px;
+  text-decoration: none; 
+} */
+.btn {
+  display: none;
+}
+.social-icons1 {
+  display: none;
+}
+
+/* .burger div {
+  
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+  margin-right: 20px;
+}
+
+.line1x {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.line3x {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin-top: 11px;
+  transition: all 0.3s ease;
+  transform: rotate(45deg) translate(-5px, -5px);
+} */
+
+/*}
+.burger-x {
+  display: none;
+}
+
+.burger {
+  display: none
+  */
+@media screen and (max-width: 800px) {
+  .header-inner {
+    margin-top: 0;
+    padding-bottom: 0px;
+    padding-top: 10px;
+
+    height: 60px;
+  }
+  .header {
+    height: 60px;
+    position: fixed;
+  }
+  .nav-menu {
+    margin: 18px 25px 40px 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+  .nav-menu.active {
+    height: 1000%;
+  }
+  .nav-links {
+    font-size: 90%;
+    padding: 4px;
+  }
+  .brand {
+    font-size: 200%;
+    font-weight: 400;
+  }
+  /* .login {
+    font-size: 75%;
+    font-weight: 100;
+    margin-right: 40px;
+  } */
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    position: fixed;
+    z-index: 20;
+    height: 55px;
+    width: 100%;
+    margin-top: 0;
+  }
+  .header-inner {
+    border-radius: 0% 0% 0% 0%;
+    margin-top: 0;
+  }
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 40px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .brand {
+    font-size: 200%;
+    font-weight: bold;
+    /*  margin-top: 0.5rem;
+    margin-left: 12rem;
+
+    padding-top: 0px; */
+    text-align: center;
+    margin-left: 40%;
+  }
+  .cart-svg {
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  /* .NavbarItems {
+    position: relative;
+  } */
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 90vh;
+
+    position: absolute;
+    top: 6vh;
+    /* left: -100px; */
+    opacity: 1;
+    transition: all 1s ease;
+    margin: 16px 0 16px 550px;
+    /* background-image: url('./images/bkg1.jpg'); */
+  }
+
+  .nav-item {
+    font-size: 120%;
+  }
+
+  .nav-menu.active {
+    background: rgb(49, 233, 24);
+
+    left: -550px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 5;
+    height: 95vh;
+    top: 2.5rem;
+  }
+
+  .nav-links {
+    text-align: center;
+    padding: 0.7rem 4rem;
+    width: 80%;
+    /* display: table; */
+    align-content: center;
+    justify-items: center;
+    margin-right: 20px;
+    height: 30px;
+    color: rgb(15, 22, 7);
+  }
+  .nav-links:hover {
+    background-color: black;
+    color: lime;
+  }
+
+  .nav-links-mobile {
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 4px;
+    width: 80%;
+    background: #1888ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .nav-links-mobile:hover {
+    background: #fff;
+    color: #1888ff;
+    transition: 250ms;
+  }
+
+  /* .login {
+    background: black;
+    color: chartreuse;
+  } */
+
+  /* .burger {
+    display: block;
+    cursor: pointer;
+
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  } */
+
+  .social-icons1 {
+    display: flex;
+    width: 240px;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    margin-top: 0;
+  }
+  .social-icon-link1 {
+    color: rgb(235, 14, 14);
+    font-size: 24px;
+
+    padding-top: 0;
+  }
+}
